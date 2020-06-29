@@ -5,7 +5,26 @@
         <meta charset="utf-8">
         <script type="text/javascript" src="js/main.js"></script>
     </head>
-    <body>
-        <h1>Minha página</h1>
+    <body onload="load()">
+        <button type="button" onclick="clicou()">Clique aqui</button>
+        <!-- <h3 id="Agradecimento"></h3> -->
+        <p id="Agradecimento"></p>
+        <button type="button" onclick="redirecionar()">Clique aqui para redirecionar</button>
+        <!-- <p id="Vá embora"></p> -->
+        <!-- <p id="Vá embora" onclick="redirecionar()"></p> -->
+        <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+        <p id="mousemove2" onmouseover="trocar(this)" onmouseout="voltar(this)"">Passe o mouse aqui</p>
+        <p id="mousemove2" onmouseover="trocar(this)" onmouseout="voltar(this)"">Passe o mouse aqui</p>
+
+        <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p> <!--sem o "id" -->
+        <p onmouseover="trocar(this)" onmouseout="voltar(this)"">Passe o mouse aqui</p> <!--sem o "id" -->
+        <p onmouseover="trocar(this)" onmouseout="voltar(this)"">Passe o mouse aqui</p> <!--sem o "id" -->
+        
+        <select onchange="funcaoChange(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
+
     </body>
 </html>
